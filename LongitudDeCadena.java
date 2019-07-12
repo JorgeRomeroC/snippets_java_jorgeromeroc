@@ -1,30 +1,30 @@
 import java.util.Scanner;
-public class LongitudDeCadena{
-	public static void main(String[]args){
-		String cadena_original = "";
-		String cadena_substraccion = "";
 
-		int num_caracteres = 0;
-		int desde = 0;
-		int hasta = 0;
+public class LongitudDeCadena {
+    public static void main(String[] args) {
+        String cadena_original = "";
+        String cadena_substraccion = "";
 
-		Scanner in = new Scanner(System.in);
+        int num_caracteres = 0;
+        int desde = 0;
+        int hasta = 0;
 
-		System.out.print("Introduce una cadena de caracteres: ");
-		cadena_original = in.nextLine();
+        Scanner in = new Scanner(System.in);
 
-		num_caracteres = cadena_original.length();
+        System.out.print("Introduce una cadena de caracteres: ");
+        cadena_original = in.nextLine();
 
-		System.out.println("La cadena de caracteres : " + cadena_original  +  " posee "  +  num_caracteres  +  " caracteres ");
+        num_caracteres = cadena_original.length();
 
-		System.out.print("¿Desde que caracter deseas obtener la nueva cadena: ");
-		desde = in.nextInt();
+        System.out.println("La cadena de caracteres : " + cadena_original  +  " posee "  +  num_caracteres  +  " caracteres ");
 
-		System.out.print("¿Hasta que caracter deseas obtener la nueva cadena: ");
-		hasta = in.nextInt();
+        System.out.print("¿Desde que caracter deseas obtener la nueva cadena: ");
+        desde = in.nextInt();
 
-		cadena_substraccion = cadena_original.substring(desde,hasta);
-		System.out.println("la nueva cadena es: " + cadena_substraccion);
+        System.out.print("¿Hasta que caracter deseas obtener la nueva cadena: ");
+        hasta = in.nextInt();
 
-	}
+        cadena_substraccion = cadena_original.substring(desde,hasta);
+        System.out.println("la nueva cadena es: " + cadena_substraccion);
+    }
 }
